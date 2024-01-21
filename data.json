@@ -1,0 +1,24 @@
+{
+  "visakhapatnam": [
+    {
+      "vendorName": "Vivek",
+      "contact": "+919891672809",
+      "image": "../assets/vendor.jpeg",
+      "orderLink": "http://hello"
+    },
+    {
+      "vendorName": "Chandrakanth Padi",
+      "contact": "+916303811529",
+      "image": "https://i.ibb.co/M2MW0NW/chs.jpg",
+      "orderLink": "http://hello"
+    }
+  ],
+  "srikakulam": [
+    {
+      "vendorName": "Paramma",
+      "contact": "+916303811529",
+      "image": "https://unsplash.com/photos/man-and-woman-standing-in-front-of-table-n4ymhyyFY7Age",
+      "orderLink": "http://hello"
+    }
+  ]
+}

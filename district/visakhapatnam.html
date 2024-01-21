@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Munch - Visakhapatnam</title>
+    <link rel="stylesheet" href="./istyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Teko:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+  </head>
+  <body>
+    <h1>Visakhapatnam</h1>
+    <div id="data"></div>
+    <!-- <div class="vendor">
+      <div class="vendor_image">
+        <img
+          src="../vendor.jpeg"
+          alt=""
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="vendor_info">
+        <div>
+          <div class="vendor_name">Chandrakanth</div>
+          <a class="vendor_number" href="tel:9490075843">Call: 6303811529</a>
+          <a class="vendor_orderlink" href="#">Order</a>
+        </div>
+      </div>
+    </div> -->
+  </body>
+  <script>
+    function loadData() {
+      const currentLocation = window.location.href;
+      let city = currentLocation.split("district")[1];
+      city = city.replace(".html", "");
+      city = city.replace("/", "");
+      citySelected = city;
+
+      let handle = document.getElementById("data");
+
+      fetch("../data.json").then(
+        function (res) {
+          if (res.ok) {
+            res.json().then(function (data) {
+              let string = "";
+              const link = data[citySelected];
+
+              link.forEach((element) => {
+                string = string + formDiv(element);
+                console.log(element);
+              });
+              handle.innerHTML = string;
+            });
+          } else {
+            console.log(
+              "Looks like the response wasn't perfect, got status",
+              res.status
+            );
+          }
+        },
+        function (e) {
+          console.log("Fetch failed!", e);
+        }
+      );
+    }
+    loadData();
+    function formDiv(element) {
+      let div =
+        '<div class="vendor"><div class="vendor_image"><img src="' +
+        element.image +
+        '" style="width: 100%; height: 100%; object-fit: cover" alt="Venodr has not uploded the image" /></div><div class="vendor_info"><div><div class="vendor_name">' +
+        element.vendorName +
+        '</div><a class="vendor_number" href="tel:' +
+        element.contact +
+        '"><span class="material-symbols-outlined" id="icon"> call </span>' +
+        element.contact +
+        '</a><a class="vendor_orderlink" id="link" href="' +
+        element.orderLink +
+        '">Order</a></div></div></div>';
+      return div;
+    }
+  </script>
+</html>

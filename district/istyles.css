@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  font-family: "Teko", sans-serif;
+  font-size: 2.8rem;
+  background-color: #e63946;
+  color: #f1faee;
+  text-shadow: 6px 6px #000;
+}
+
+.vendor {
+  display: flex;
+  flex-grow: 1;
+  padding: 1.1rem 0;
+  width: min(98%, 25rem);
+  margin: 0.2rem auto;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.vendor_info {
+  display: flex;
+  justify-content: center;
+}
+
+.vendor_info div * {
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.vendor_name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.vendor_image {
+  width: min(50%, 10rem);
+  height: 12rem;
+  margin: auto;
+  margin-bottom: 0.4rem;
+  border: 1px solid black;
+}
+
+.vendor_number {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icon {
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.2rem;
+  margin-right: 0.4rem;
+}
+
+.vendor_orderlink {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 1.1rem;
+  background-color: #e63946;
+  text-align: center;
+  padding: 0.8rem 0;
+  width: 10rem;
+  margin: auto;
+  color: #f1faee;
+  font-weight: bold;
+  text-shadow: 4px 4px #000;
+}
+
+#link {
+  margin-top: 0.4rem;
+}/*# sourceMappingURL=istyles.css.map */
