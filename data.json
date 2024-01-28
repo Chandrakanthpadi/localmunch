@@ -4,7 +4,13 @@
       "vendorName": "Vivek",
       "contact": "+919891672888",
       "image": "../assets/vendor.jpeg",
-      "orderLink": "https://docs.google.com/forms/d/e/1FAIpQLSeoRWoOk9a5959X3lIcCYmRD9xFfntaV-4D2m0HQAvuB8IdCQ/viewform"
+      "orderLink": "https://docs.google.com/forms/d/e/1FAIpQLSeoRWoOk9a5959X3lIcCYmRD9xFfntaV-4D2m0HQAvuB8IdCQ/viewform?usp=pp_url"
+    },
+    {
+      "vendorName": "Roshiek",
+      "contact": "+916303811529",
+      "image": "https://i.ibb.co/M2MW0NW/chs.jpg",
+      "orderLink": "https://docs.google.com/forms/d/e/1FAIpQLSeoRWoOk9a5959X3lIcCYmRD9xFfntaV-4D2m0HQAvuB8IdCQ/viewform?usp=pp_url"
     }
   ],
   "srikakulam": [
@@ -12,7 +18,7 @@
       "vendorName": "Paramma",
       "contact": "+916303811529",
       "image": "https://unsplash.com/photos/man-and-woman-standing-in-front-of-table-n4ymhyyFY7Age",
-      "orderLink": "https://docs.google.com/forms/d/e/1FAIpQLSeoRWoOk9a5959X3lIcCYmRD9xFfntaV-4D2m0HQAvuB8IdCQ/viewform"
+      "orderLink": "https://docs.google.com/forms/d/e/1FAIpQLSeoRWoOk9a5959X3lIcCYmRD9xFfntaV-4D2m0HQAvuB8IdCQ/viewform?usp=pp_url"
     }
   ]
 }
